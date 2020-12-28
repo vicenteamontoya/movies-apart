@@ -1,0 +1,8 @@
+(actor)--[movie#@year]-->(actor)--...
+(Nicole Kidman)--[The Human Stain#@2003]-->(Anthony Hopkins)--[Bram Stoker's Dracula#@1992]-->(Keanu Reeves)
+(Tim Roth)--[Rosencrantz & Guildenstern Are Dead#@1990]-->(Gary Oldman)--[Murder in the First#@1995]-->(Christian Slater)--[Way of the Wicked#@2014]-->(Vinnie Jones)
+(Will Smith)--[Wild Wild West#@1999]-->(Kevin Kline)--[Darling Companion#@2012]-->(Dianne Wiest)--[Cookie#@1989]-->(Emily Lloyd)--[In Country#@1989]-->(Bruce Willis)
+(Christopher Walken)--[$5 a Day#@2008]-->(Sharon Stone)--[Beyond the Stars#@1989]-->(Christian Slater)--[3000 Miles to Graceland#@2001]-->(Kevin Costner)--[Robin Hood: Prince of Thieves#@1991]-->(Morgan Freeman)
+(Courteney Cox)--[3000 Miles to Graceland#@2001]-->(Christian Slater)--[Dawn Rider#@2012]-->(Jill Hennessy)--[If I Had Wings#@2013]-->(Richard Harmon)
+(Cameron Diaz)--[Shrek#@2001]-->(John Lithgow)--[Footloose#@1984]-->(Dianne Wiest)--[Cookie#@1989]-->(Emily Lloyd)
+(Kyra Sedgwick)--[Big Sky#@2015]-->(Frank Grillo)

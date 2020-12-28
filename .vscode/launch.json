@@ -1,0 +1,80 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "c++ debug active file",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/${relativeFileDirname}/${fileBasenameNoExtension}.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "build active file",
+            "miDebuggerPath": "/usr/bin/gdb"
+        },
+        {
+            "name": "pathfinder",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/src/pathfinder.exe",
+            "args": [
+                "data/pathfinder1_graph.tsv",
+                "data/pathfinder1_pairs.tsv",
+                "data/unweighted_paths.tsv",
+            ],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "build",
+            "miDebuggerPath": "/usr/bin/gdb"
+        },
+        {
+            "name": "map",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/src/map.exe",
+            "args": [
+                "data/map1xy.txt",
+                "data/map1roads.txt",
+                "data/map1pairs.txt",
+                "shortest_path.txt"
+            ],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "build",
+            "miDebuggerPath": "/usr/bin/gdb"
+        }
+    ]
+}

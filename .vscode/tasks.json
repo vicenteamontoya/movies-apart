@@ -1,0 +1,15 @@
+{
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "build",
+            "command": "cd build && if ls | grep Makefile; then echo using make.. && cmake -DCMAKE_BUILD_TYPE=Debug .. && make; else echo using ninja... && ninja; fi;"
+        },
+        {
+            "type": "shell",
+            "label": "build active file",
+            "command": "cd build && if ls | grep Makefile; then echo using make... && cmake -DCMAKE_BUILD_TYPE=Debug .. && make ${fileBasenameNoExtension}.exe; else echo using ninja... && ninja ${relativeFileDirname}/${fileBasenameNoExtension}.exe; fi;"
+        }
+    ],
+    "version": "2.0.0"
+}
